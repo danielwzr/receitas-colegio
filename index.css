@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(89, 53, 124);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    padding: 34px;
+    text-align: center;
+    color: white;
+    background: rgb(55,3,148);
+background: radial-gradient(circle, rgba(55,3,148,1) 27%, rgba(34,10,60,1) 100%);
+}
+
+main{
+    flex: 1;
+}
+
+section{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.receita{
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    background: rgb(27, 4, 81);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+    transition: 1s;
+}
+
+.receita img{
+    max-width: 100%;
+    height: auto;
+}
+
+.receita h3{
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+footer{
+    margin-top: 60px;
+}
+
+header{
+    margin-bottom: 60px;
+}
+
+.receita:hover{
+    background: rgb(47, 8, 114) !important;
+    scale: 1.05;
+}
+
+header img{
+    max-width: 80px;
+}
+
+
+@media screen and (max-width: 900px){
+
+    main{
+        padding: 22px;
+    }
+
+    .receita img{
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
